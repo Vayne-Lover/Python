@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 print 2**3
 print pow(2,3)
 print abs(-10)
