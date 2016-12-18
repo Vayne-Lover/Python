@@ -17,15 +17,36 @@
 #print b
 #del b[1]
 #print b
-c=list("Perl")
-c[1:1]=list('ython')
-c[-4:]=[]
-c.append('n')
-print c.count('t')
-print c
-d=[1,2,3]
-d.extend([4,5,6])
-print d
-e=[7,8,9]
-print e+[10,11,12]
-print e
+#c=list("Perl")
+#c[1:1]=list('ython')
+#c[-4:]=[]
+#c.append('n')
+#print c.count('t')
+#print c
+#d=[1,2,3]
+#d.extend([4,5,6])
+#print d
+#e=[7,8,9]
+#print e+[10,11,12]
+#print e
+f=list("abcdefg")
+print f.index('c')
+f.insert(len(f),'h')
+print f
+print f.pop()
+f.append('h')
+print f
+f.remove('h')
+print f
+g=[1,2,3]
+g.reverse()
+print g
+h=[3,4,8,2,6]
+i=h[:]
+i.sort()
+print i
+h.sort(reverse=True)
+print h
+j=['ads','dd','eeeee','asdsadd']
+print j.sort(key=len)
+print j
