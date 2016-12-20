@@ -22,13 +22,32 @@
 #print x
 #print y
 #print z
-x={'name':'a','age':14}
-y=x.copy()
-y['age']=25
+#x={'name':'a','age':14}
+#y=x.copy()
+#y['age']=25
+#print x
+#print y
+#a={}
+#b=a.fromkeys(['name','age'],'(hahaha)')
+#print b
+#print b.get('name')
+#print b.get('hi','N/A')
+#c={}
+#print c.has_key('name')
+#c['name']='Eric'
+#print c.has_key('name')
+#x={'name':'a','age':'14'}
+#print x.items()
+#print x.pop('age')
+#print x
+#y={}
+#print y.setdefault('name','N/A')
+#print y
+#y['name']='Apple'
+#y.setdefault('name','N/A')
+#print y
+x={'a':'1','b':'2','c':'3'}
+y={'c':'5'}
+x.update(y)
 print x
-print y
-a={}
-b=a.fromkeys(['name','age'],'(hahaha)')
-print b
-print b.get('name')
-print b.get('hi','N/A')
+print x.values()
