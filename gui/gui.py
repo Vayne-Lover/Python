@@ -11,12 +11,26 @@
 #app.MainLoop()
 import wx
 
+def load(event):
+  file=open(filename.GetValue())
+  contents.SetValue(file.read())
+  file.close()
+
+def save(event):
+  file=open(filename.GetValue(),'w')
+  file.write(contents.GetValue())
+  file.close()
+
 app=wx.App()
 win=wx.Frame(None,title='Editor',size=(410,335))
 bkg=wx.Panel(win)
 
 loadbtn=wx.Button(bkg,label='Open')
+loadbtn.Bind(wx.EVT_BUTTON,load)
+
 savebtn=wx.Button(bkg,label='Save')
+savebtn.Bind(wx.EVT_BUTTON,save)
+
 filename=wx.TextCtrl(bkg)
 contents=wx.TextCtrl(bkg,style=wx.TE_MULTILINE|wx.HSCROLL)
 
