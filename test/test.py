@@ -1,7 +1,7 @@
-#!/usr/loacl/bin/python
+#!/usr/local/bin/python
 import unittest,my_math
 
-class ProductTestCase(unittest,TestCase):
+class ProductTestCase(unittest.TestCase):
   def testInt(self):
     for x in xrange(-10,10):
       for y in xrange(-10,10):
