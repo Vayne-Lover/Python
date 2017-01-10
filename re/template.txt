@@ -1,0 +1,10 @@
+[import time]
+Dear [name],
+
+You use [language] to write this letter.
+
+Your email is [email].
+
+And the time is [time.asctime()].
+
+Best Regards.
